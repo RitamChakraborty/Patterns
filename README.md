@@ -38,7 +38,7 @@ for i in range(n):
 ---
 
 <a href="pattern_3/main.py">
-<h2 align="left">Pattern 2</h2>
+<h2 align="left">Pattern 3</h2>
 </a>
 <img align="right" src="pattern_3/pattern_3.png">
 
@@ -58,6 +58,31 @@ for i in range(n):
 
     print(s)
 
+```
+
+---
+
+<a href="pattern_4/main.py">
+<h2 align="left">Pattern 4</h2>
+</a>
+<img align="right" src="pattern_4/pattern_4.png">
+
+```
+n = 5
+l = []
+
+for i in range(n):
+    l1 = []
+    for j in range(i + 1):
+        if 0 < j < i:
+            l1.append(l[j - 1] + l[j])
+        else:
+            l1.append(1)
+
+    l.clear()
+    l.extend(l1)
+    print("\t" * (n - i), end="")
+    print("\t\t".join(list(map(str, l))))
 ```
 
 ---
