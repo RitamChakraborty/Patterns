@@ -16,3 +16,23 @@ print("\n".join(["\t".join([str(j + 1) if j >= i else str(i + 1) for j in range(
 ```
 
 ---
+
+<a href="pattern_2/main.py">
+<h2 align="left">Pattern 2</h2>
+</a>
+<img align="right" src="pattern_2/pattern_2.png">
+
+```
+n = 5
+m = (n * (n + 1)) // 2
+k = 0
+
+for i in range(n):
+    for j in range(n - i):
+        print('\t', (m - k), end="")
+        k += 1
+    print()
+
+```
+
+---
