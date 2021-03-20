@@ -36,3 +36,28 @@ for i in range(n):
 ```
 
 ---
+
+<a href="pattern_3/main.py">
+<h2 align="left">Pattern 2</h2>
+</a>
+<img align="right" src="pattern_3/pattern_3.png">
+
+```
+n = 8
+
+for i in range(n):
+    s = ""
+
+    r = range(n - i)
+
+    if i % 2 != 0:
+        r = r[::-1]
+
+    for j in r:
+        s += str(j + 1)
+
+    print(s)
+
+```
+
+---
