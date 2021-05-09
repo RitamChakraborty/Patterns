@@ -86,11 +86,32 @@ for i in range(n):
 ```
 
 ---
-
 <a href="pattern_5/main.py">
 <h2 align="left">Pattern 5</h2>
 </a>
 <img align="right" src="pattern_5/pattern_5.png">
+
+```
+def p(i):
+    print("*".join([str(i + 1)] * (i + 1)))
+
+
+if __name__ == '__main__':
+    n = 4
+    for i in range(n):
+        p(i)
+
+    for i in range(n - 1)[::-1]:
+        p(i)
+
+```
+
+---
+
+<a href="pattern_6/main.py">
+<h2 align="left">Pattern 6</h2>
+</a>
+<img align="right" src="pattern_6/pattern_6.png">
 
 ```
 l = range(1, 11)
