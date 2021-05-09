@@ -86,3 +86,36 @@ for i in range(n):
 ```
 
 ---
+
+<a href="pattern_5/main.py">
+<h2 align="left">Pattern 5</h2>
+</a>
+<img align="right" src="pattern_5/pattern_5.png">
+
+```
+l = range(1, 11)
+l1 = []
+j = 0
+
+for i in range(1, 5):
+    j += i
+    k = j - i
+    l1.append(list(l[k:j]))
+
+l2 = l1[0:2]
+l3 = l1[2:]
+
+a = 0
+b = 0
+
+for i in range(4):
+    if i % 2 == 0:
+        print(l2[a])
+        a += 1
+    else:
+        print(l3[b])
+        b += 1
+```
+
+---
+
